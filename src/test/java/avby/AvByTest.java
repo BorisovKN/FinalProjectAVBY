@@ -216,6 +216,7 @@ public class AvByTest {
         driver.findElement(By.xpath("//span[@class='nav__link-text' and text()='Войти']")).click();
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='tablist']//button[@class='tab' and text()='почте или логину']"))).click();
         WebElement mail = driver.findElement(By.xpath("//input[@class='form-control form-control--large' and @id='authLogin']"));
+        //перед тем как полностью прогнать тест, заменить почу на hdeer9598@gmail.com
         mail.sendKeys("kirill_borisov98@mail.ru");
         WebElement password = driver.findElement(By.xpath("//input[@class='form-control form-control--large' and @id='loginPassword']"));
         password.sendKeys("Borisov88");
