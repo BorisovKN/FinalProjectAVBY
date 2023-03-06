@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Onliner" parallel="tests" thread-count="1">
+    <test name="test">
+        <classes>
+            <class name="avby.RegInvalidName"/>
+            <class name="avby.RegInvalidMail"/>
+            <class name="avby.RegInvalidPassword"/>
+            <class name="avby.RegSuccessful"/>
+            <class name="avby.AutoReview"/>
+            <class name="avby.CarSearch"/>
+            <class name="avby.CreatingAnAd"/>
+        </classes>
+    </test>
+</suite>
