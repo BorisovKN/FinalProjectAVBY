@@ -6,7 +6,7 @@ import framework.elements.InPut;
 import framework.elements.Label;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import org.testng.Assert;
+
 
 public class AdPage extends BasePage {
     private static final By pageLocator = By.xpath("//h1[@class='heading__text']");
