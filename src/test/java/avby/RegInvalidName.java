@@ -9,13 +9,13 @@ import org.testng.annotations.Test;
 public class RegInvalidName extends BaseTest {
     @Test
     public void avByRegName() {
-        RegPageInvalidName loginPageInvalidMail = new RegPageInvalidName();
-        RegPageInvalidName.navigateLoginPage("Войти");
-        RegPageInvalidName.navigateSpan();
-        RegPageInvalidName.inPutName();
-        RegPageInvalidName.inPutMail();
-        RegPageInvalidName.inPutPassword();
-        RegPageInvalidName.clickCheckBox();
-        RegPageInvalidName.clickReg();
+        RegPageInvalidName regPageInvalidName = new RegPageInvalidName();
+        regPageInvalidName.navigateLoginPage("Войти");
+        regPageInvalidName.navigateSpan();
+        regPageInvalidName.inPutName();
+        regPageInvalidName.inPutMail();
+        regPageInvalidName.inPutPassword();
+        regPageInvalidName.clickCheckBox();
+        regPageInvalidName.clickReg();
     }
 }

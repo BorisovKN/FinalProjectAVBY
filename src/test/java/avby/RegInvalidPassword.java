@@ -15,13 +15,13 @@ import java.time.Duration;
 public class RegInvalidPassword {
     @Test
     public void avByRegPassword() {
-        RegPageInvalidPassword loginPageInvalidMail = new RegPageInvalidPassword();
-        RegPageInvalidPassword.navigateLoginPage("Войти");
-        RegPageInvalidPassword.navigateSpan();
-        RegPageInvalidPassword.inPutName();
-        RegPageInvalidPassword.inPutMail();
-        RegPageInvalidPassword.inPutPassword();
-        RegPageInvalidPassword.clickCheckBox();
-        RegPageInvalidPassword.clickReg();
+        RegPageInvalidPassword regPageInvalidPassword = new RegPageInvalidPassword();
+        regPageInvalidPassword.navigateLoginPage("Войти");
+        regPageInvalidPassword.navigateSpan();
+        regPageInvalidPassword.inPutName();
+        regPageInvalidPassword.inPutMail();
+        regPageInvalidPassword.inPutPassword();
+        regPageInvalidPassword.clickCheckBox();
+        regPageInvalidPassword.clickReg();
     }
 }

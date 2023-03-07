@@ -32,69 +32,67 @@ public class SearchPage extends BasePage {
     }
 
     @Step(" Выбор марки Renault.")
-    public static void navigateMark(String markPage) {
+    public void navigateMark(String markPage) {
         Label navMarkPage = new Label(By.xpath(String.format(NAV_MARK, markPage)));
         navMarkPage.clickAndWait();
     }
 
     @Step(" Выбор модель.")
-    public static void navigateMarkModel(String modelPage) {
+    public void navigateMarkModel(String modelPage) {
         Label navMarkModelPage = new Label(By.xpath(String.format(NAV_MARK_MODEL, modelPage)));
         navMarkModelPage.clickAndWait();
     }
 
     @Step(" Выбор модель Scenic.")
-    public static void navigateMarkModeAuto(String autoPage) {
+    public void navigateMarkModeAuto(String autoPage) {
         Label navMarkModelAutoPage = new Label(By.xpath(String.format(NAV_MARK_MODEL_AUTO, autoPage)));
         navMarkModelAutoPage.clickAndWait();
     }
 
     @Step(" Выбор коробки передач механика.")
-    public static void clickTypeOfGear(String typeGear) {
+    public void clickTypeOfGear(String typeGear) {
         Label clTypeOfGear = new Label(By.xpath(String.format(TYPE_OF_GEAR, typeGear)));
         clTypeOfGear.clickAndWait();
     }
 
     @Step(" Выбор поколение авто.")
-    public static void clickGenerationAuto(String generAuto) {
+    public void clickGenerationAuto(String generAuto) {
         Label clGenAuto = new Label(By.xpath(String.format(GENERATION_AUTO, generAuto)));
         clGenAuto.clickAndWait();
     }
 
     @Step(" Выбор поколение авто 'IV, 2016…'.")
-    public static void clickGenerationAutoClick(String generAutoCl) {
+    public void clickGenerationAutoClick(String generAutoCl) {
         Label clGenAutoCl = new Label(By.xpath(String.format(GENERATION_AUTO_CLICK, generAutoCl)));
         clGenAutoCl.clickAndWait();
     }
 
     @Step(" Выбор года.")
-    public static void clickManufactureYear(String manufYear) {
+    public void clickManufactureYear(String manufYear) {
         Label manufactureYear = new Label(By.xpath(String.format(SELECT_YEAR_OF_MANUFACTURE, manufYear)));
         manufactureYear.clickAndWait();
     }
 
     @Step(" Выбор года fdnj '2018'.")
-    public static void clickManufactureYearAuto(String autoYear) {
+    public void clickManufactureYearAuto(String autoYear) {
         Label manufactureYearAuto = new Label(By.xpath(String.format(SELECT_YEAR, autoYear)));
         manufactureYearAuto.clickAndWait();
     }
 
     @Step(" Тип двигателя.")
-    public static void clickTypeOfEngine() {
+    public void clickTypeOfEngine() {
         TYPE_OF_ENGINE.clickAndWait();
     }
 
     @Step(" Выбор типа двигателя 'дизель'.")
-    public static void clickSelectTypeOfEngine(String typeEngine) {
+    public void clickSelectTypeOfEngine(String typeEngine) {
         Label selectTypeOfEngine = new Label(By.xpath(String.format(SELECT_TYPE_OF_ENGINE, typeEngine)));
         selectTypeOfEngine.clickAndWait();
     }
 
     @Step(" Нажать показать 'Показать'.")
-    public static void clickShow(String showAuto) {
+    public void clickShow(String showAuto) {
         Label show = new Label(By.xpath(String.format(SHOW, showAuto)));
         show.clickAndWait();
     }
-
-
 }

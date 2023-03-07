@@ -29,26 +29,26 @@ public class RegPageInvalidPassword extends BasePage {
         Assert.assertTrue(PAGE_LOCATOR.isDisplayed(), "ERROR: Страница 'Login page' не была загружена!!!");
     }
     @Step("Переход на страницу Вход.")
-    public static void navigateLoginPage(String loginPage){
+    public void navigateLoginPage(String loginPage){
         Label navLoginPage = new Label(By.xpath(String.format(NAV_LOGIN_PAGE, loginPage)));
         navLoginPage.clickAndWait();
     }
-    public static void navigateSpan(){
+    public void navigateSpan(){
         NAV_SPAN.clickAndWait();
     }
-    public static void inPutName(){
+    public void inPutName(){
         INPUT_NAME.sendKeys("Иван");
     }
-    public static void inPutMail(){
+    public void inPutMail(){
         INPUT_MAIL.sendKeys("hdeer9598@gmail.com");
     }
-    public static void inPutPassword(){
+    public void inPutPassword(){
         INPUT_PASSWORD.sendKeys("гупцаыдвмидыв");
     }
-    public static void clickCheckBox(){
+    public void clickCheckBox(){
         CHECK_BOX.clickAndWait();
     }
-    public static void clickReg(){
+    public void clickReg(){
         REG.clickAndWait();
     }
 }

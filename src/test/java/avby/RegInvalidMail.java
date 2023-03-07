@@ -16,13 +16,13 @@ import java.time.Duration;
 public class RegInvalidMail extends BaseTest {
     @Test
     public void aVByRegMail() {
-        RegPageInvalidMail loginPageInvalidMail = new RegPageInvalidMail();
-        RegPageInvalidMail.navigateLoginPage("Войти");
-        RegPageInvalidMail.navigateSpan();
-        RegPageInvalidMail.inPutName();
-        RegPageInvalidMail.inPutMail();
-        RegPageInvalidMail.inPutPassword();
-        RegPageInvalidMail.clickCheckBox();
-        RegPageInvalidMail.clickReg();
+        RegPageInvalidMail regPageInvalidMail = new RegPageInvalidMail();
+        regPageInvalidMail.navigateLoginPage("Войти");
+        regPageInvalidMail.navigateSpan();
+        regPageInvalidMail.inPutName();
+        regPageInvalidMail.inPutMail();
+        regPageInvalidMail.inPutPassword();
+        regPageInvalidMail.clickCheckBox();
+        regPageInvalidMail.clickReg();
     }
 }

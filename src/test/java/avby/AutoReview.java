@@ -12,14 +12,16 @@ import org.testng.annotations.Test;
 public class AutoReview extends BaseTest {
     @Test
     public void autoReview() {
-        LoginPage.navigateLoginPage("Войти");
-        LoginPage.navigateSpan();
-        LoginPage.inPutMail();
-        LoginPage.inPutPassword();
-        LoginPage.clickEnter();
-        LoginPage.clickCookieBanner();
-        ReviewPage.navigateJournalPage("Журнал");
-        ReviewPage.navigateReviewPage("Обзоры");
-        ReviewPage.navigateReviewAutoPage();
+        LoginPage loginPage = new LoginPage();
+        loginPage.navigateLoginPage("Войти");
+        loginPage.navigateSpan();
+        loginPage.inPutMail();
+        loginPage.inPutPassword();
+        loginPage.clickEnter();
+        loginPage.clickCookieBanner();
+        ReviewPage reviewPage = new ReviewPage();
+        reviewPage.navigateJournalPage("Журнал");
+        reviewPage.navigateReviewPage("Обзоры");
+        reviewPage.navigateReviewAutoPage();
     }
 }

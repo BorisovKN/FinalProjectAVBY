@@ -8,22 +8,24 @@ import org.testng.annotations.Test;
 public class CarSearch {
     @Test
     public void carSearch() {
-        LoginPage.navigateLoginPage("Войти");
-        LoginPage.navigateSpan();
-        LoginPage.inPutMail();
-        LoginPage.inPutPassword();
-        LoginPage.clickEnter();
-        LoginPage.clickCookieBanner();
-        SearchPage.navigateMark("Renault");
-        SearchPage.navigateMarkModel("Модeль");
-        SearchPage.navigateMarkModeAuto("Scenic");
-        SearchPage.clickTypeOfGear("механика");
-        SearchPage.clickGenerationAuto("Поколение");
-        SearchPage.clickGenerationAutoClick("IV, 2016…");
-        SearchPage.clickManufactureYear("Год от");
-        SearchPage.clickManufactureYearAuto("2018");
-        SearchPage.clickTypeOfEngine();
-        SearchPage.clickSelectTypeOfEngine("дизель");
-        SearchPage.clickShow("Показать");
+        LoginPage loginPage = new LoginPage();
+        loginPage.navigateLoginPage("Войти");
+        loginPage.navigateSpan();
+        loginPage.inPutMail();
+        loginPage.inPutPassword();
+        loginPage.clickEnter();
+        loginPage.clickCookieBanner();
+        SearchPage searchPage = new SearchPage();
+        searchPage.navigateMark("Renault");
+        searchPage.navigateMarkModel("Модeль");
+        searchPage.navigateMarkModeAuto("Scenic");
+        searchPage.clickTypeOfGear("механика");
+        searchPage.clickGenerationAuto("Поколение");
+        searchPage.clickGenerationAutoClick("IV, 2016…");
+        searchPage.clickManufactureYear("Год от");
+        searchPage.clickManufactureYearAuto("2018");
+        searchPage.clickTypeOfEngine();
+        searchPage.clickSelectTypeOfEngine("дизель");
+        searchPage.clickShow("Показать");
     }
 }

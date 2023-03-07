@@ -16,13 +16,13 @@ import java.time.Duration;
 public class RegSuccessful extends BaseTest {
     @Test
     public void reg() {
-        RegPage loginPage = new RegPage();
-        RegPage.navigateLoginPage("Войти");
-        RegPage.navigateSpan();
-        RegPage.inPutName();
-        RegPage.inPutMail();
-        RegPage.inPutPassword();
-        RegPage.clickCheckBox();
-        RegPage.clickReg();
+        RegPage regPage = new RegPage();
+        regPage.navigateLoginPage("Войти");
+        regPage.navigateSpan();
+        regPage.inPutName();
+        regPage.inPutMail();
+        regPage.inPutPassword();
+        regPage.clickCheckBox();
+        regPage.clickReg();
     }
 }

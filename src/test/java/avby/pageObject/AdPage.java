@@ -39,7 +39,7 @@ public class AdPage extends BasePage {
 
 
     @Step("Открытие страницы подачи объявления.")
-    public static void submitAnAd() {
+    public void submitAnAd() {
         SUBMIT_AN_AD.clickAndWait();
     }
     public AdPage() {
@@ -47,154 +47,154 @@ public class AdPage extends BasePage {
     }
 
     @Step("Выбрать 'Шины и диски'.")
-    public static void clickTiresAndWheels(String tiresWheels) {
+    public void clickTiresAndWheels(String tiresWheels) {
         Label clickTiresWheels = new Label(By.xpath(String.format(TIRES_AND_WHEELS, tiresWheels)));
         clickTiresWheels.moveToElement();
         clickTiresWheels.clickAndWait();
     }
 
     @Step("Выбрать 'Диски'.")
-    public static void clickWheels(String tiresWheels) {
+    public void clickWheels(String tiresWheels) {
         Label clickWheel = new Label(By.xpath(String.format(CLICK_WHEELS, tiresWheels)));
         clickWheel.clickAndWait();
     }
 
     @Step("Нажать количество.")
-    public static void quantity() {
+    public void quantity() {
         QUANTITY.clickAndWait();
     }
 
     @Step("Выбрать количество.")
-    public static void chooseQuantity() {
+    public void chooseQuantity() {
         CHOOSE_QUANTITY.clickAndWait();
     }
 
     @Step("Нажать тип диска.")
-    public static void typeOfWheels() {
+    public void typeOfWheels() {
         TYPE_OF_WHEELS.clickViaJS();
     }
 
     @Step("Выбрать тип диска.")
-    public static void chooseTypeOfWheels() {
+    public void chooseTypeOfWheels() {
         CHOOSE_TYPE_OF_WHEELS.clickAndWait();
     }
 
     @Step("Выбрать 'с пробегом'.")
-    public static void conditionWheels(String tiresWheels) {
+    public void conditionWheels(String tiresWheels) {
         Label condition = new Label(By.xpath(String.format(CONDITION, tiresWheels)));
         condition.clickViaJS();
     }
 
     @Step("Нажать ширина диска.")
-    public static void discWidth() {
+    public void discWidth() {
         DISC_WIDTH.scrollIntoView();
         DISC_WIDTH.clickAndWait();
     }
 
     @Step("Выбрать ширину диска.")
-    public static void chooseDiscWidth() {
+    public void chooseDiscWidth() {
         CHOOSE_DISC_WIDTH.scrollIntoView();
         CHOOSE_DISC_WIDTH.click();
     }
 
     @Step("Нажать диаметр диска.")
-    public static void discDiameter() {
+    public void discDiameter() {
         DISC_DIAMETER.scrollIntoView();
         DISC_DIAMETER.clickViaJS();
     }
 
     @Step("Выбрать диаметр диска.")
-    public static void chooseDiscDiameter() {
+    public void chooseDiscDiameter() {
         CHOOSE_DISC_DIAMETER.scrollIntoView();
         CHOOSE_DISC_DIAMETER.clickViaJS();
     }
 
     @Step("Нажать сверловка.")
-    public static void pCD() {
+    public void pCD() {
         PCD.scrollIntoView();
         PCD.clickViaJS();
     }
 
     @Step("Выбрать сверловку.")
-    public static void choosePCD() {
+    public void choosePCD() {
         CHOOSE_PCD.scrollIntoView();
         CHOOSE_PCD.clickViaJS();
     }
 
     @Step("Нажать ЕТ.")
-    public static void eT() {
+    public void eT() {
         ET.scrollIntoView();
         ET.clickViaJS();
     }
 
     @Step("Выбрать ЕТ.")
-    public static void chooseET() {
+    public void chooseET() {
         CHOOSE_ET.scrollIntoView();
         CHOOSE_ET.clickViaJS();
     }
 
     @Step("Нажать DIA.")
-    public static void clickDIA() {
+    public void clickDIA() {
         DIA.scrollIntoView();
         DIA.clickViaJS();
     }
 
     @Step("Выбрать DIA.")
-    public static void chooseDIA() {
+    public void chooseDIA() {
         CHOOSE_DIA.scrollIntoView();
         CHOOSE_DIA.clickViaJS();
     }
 
     @Step("Нажать далее.")
-    public static void clickONWARD() {
+    public void clickONWARD() {
         ONWARD.scrollIntoView();
         ONWARD.clickViaJS();
     }
 
     @Step("Нажать выбрать фото.")
-    public static void clickChoosePhoto() {
+    public void clickChoosePhoto() {
         CHOOSE_PHOTO.scrollIntoView();
         CHOOSE_PHOTO.sendKeys(System.getProperty("user.dir") + "\\src\\test\\photo\\car.jpg");
     }
 
     @Step("Нажать далее.")
-    public static void clickONWARDS() {
+    public void clickONWARDS() {
         ONWARD.scrollIntoView();
         ONWARD.clickViaJS();
     }
 
     @Step("Ввести описание.")
-    public static void inputDescription() {
+    public void inputDescription() {
         DESCRIPTION.scrollIntoView();
         DESCRIPTION.sendKeys("Диски литые в комплекте с зимней резиной");
     }
 
     @Step("Ввести цену.")
-    public static void inputPrice() {
+    public void inputPrice() {
         INPUT_PRICE.scrollIntoView();
         INPUT_PRICE.sendKeys("650");
     }
 
     @Step("Ввести цену.")
-    public static void inputName() {
+    public void inputName() {
         INPUT_NAME.scrollIntoView();
         INPUT_NAME.sendKeys("Иван");
     }
 
     @Step("Ввести номер.")
-    public static void inputPhone() {
+    public void inputPhone() {
         INPUT_PHONE.scrollIntoView();
         INPUT_PHONE.sendKeys("336929823");
     }
 
     @Step("Нажать чекбокс.")
-    public static void checkBox() {
+    public void checkBox() {
         CHECK_BOX.scrollIntoView();
         CHECK_BOX.clickViaJS();
     }
 
     @Step("Нажать опубликовать.")
-    public static void clickPublish() {
+    public void clickPublish() {
         CLICK_PUBLISH.scrollIntoView();
         CLICK_PUBLISH.clickViaJS();
     }

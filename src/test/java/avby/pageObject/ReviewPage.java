@@ -27,12 +27,12 @@ public class ReviewPage extends BasePage {
         navJournalPage.clickAndWait();
     }
     @Step("Переход на страницу Обзоры.")
-    public static void navigateReviewPage(String reviewPage) {
+    public void navigateReviewPage(String reviewPage) {
         Label navReviewPage = new Label(By.xpath(String.format(NAV_REVIEW_PAGE, reviewPage)));
         navReviewPage.clickAndWait();
     }
     @Step("Переход на страницу Обзоры авто.")
-    public static void navigateReviewAutoPage() {
+    public void navigateReviewAutoPage() {
         NAV_REVIEW_AUTO.clickAndWait();
     }
 
