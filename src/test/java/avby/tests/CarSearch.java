@@ -1,7 +1,7 @@
-package avby;
+package avby.tests;
 
-import avby.pageObject.LoginPage;
-import avby.pageObject.SearchPage;
+import avby.pageObject.pages.LoginPage;
+import avby.pageObject.pages.SearchPage;
 import org.testng.annotations.Test;
 
 

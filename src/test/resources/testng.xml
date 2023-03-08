@@ -3,13 +3,13 @@
 <suite name="AvBy" parallel="tests" thread-count="1">
     <test name="test">
         <classes>
-            <class name="avby.RegInvalidName"/>
-            <class name="avby.RegInvalidMail"/>
-            <class name="avby.RegInvalidPassword"/>
-            <class name="avby.RegSuccessful"/>
-            <class name="avby.AutoReview"/>
-            <class name="avby.CarSearch"/>
-            <class name="avby.CreatingAnAd"/>
+            <class name="avby.tests.RegInvalidName"/>
+            <class name="avby.tests.RegInvalidMail"/>
+            <class name="avby.tests.RegInvalidPassword"/>
+            <class name="avby.tests.RegSuccessful"/>
+            <class name="avby.tests.AutoReview"/>
+            <class name="avby.tests.CarSearch"/>
+            <class name="avby.tests.CreatingAnAd"/>
         </classes>
     </test>
 </suite>

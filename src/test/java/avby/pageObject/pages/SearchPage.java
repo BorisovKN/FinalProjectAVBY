@@ -1,4 +1,4 @@
-package avby.pageObject;
+package avby.pageObject.pages;
 
 import framework.BasePage;
 import framework.elements.Button;

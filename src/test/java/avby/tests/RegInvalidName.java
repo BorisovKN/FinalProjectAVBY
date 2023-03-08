@@ -1,6 +1,6 @@
-package avby;
+package avby.tests;
 
-import avby.pageObject.RegPageInvalidName;
+import avby.pageObject.pages.RegPageInvalidName;
 import framework.BaseTest;
 import org.testng.annotations.Test;
 

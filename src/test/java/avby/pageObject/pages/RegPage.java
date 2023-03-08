@@ -1,4 +1,4 @@
-package avby.pageObject;
+package avby.pageObject.pages;
 
 import framework.BasePage;
 import framework.elements.Button;
@@ -8,7 +8,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class RegPageInvalidMail extends BasePage {
+public class RegPage extends BasePage {
     private static final Label PAGE_LOCATOR = new Label(By.xpath("//div[@class='author__title' and text()='%s']"));
     private static final By pageLocator = By.xpath("//div[@class='author__title' and text()='%s']");
     private static final String NAV_LOGIN_PAGE = "//div[contains(@class,'drawer__slide--active')]//button[text()='%s']";
@@ -20,7 +20,7 @@ public class RegPageInvalidMail extends BasePage {
     private static final Button REG = new Button(By.xpath("//div[@aria-labelledby='почте']//span[@class='button__text' and text()='Зарегистрироваться']"));
 
 
-    public RegPageInvalidMail() {
+    public RegPage() {
         super(pageLocator, "'Login' Page");
     }
 
@@ -29,7 +29,7 @@ public class RegPageInvalidMail extends BasePage {
         Assert.assertTrue(PAGE_LOCATOR.isDisplayed(), "ERROR: Страница 'Login page' не была загружена!!!");
     }
     @Step("Переход на страницу Вход.")
-    public void navigateLoginPage(String loginPage){
+    public static void navigateLoginPage(String loginPage){
         Label navLoginPage = new Label(By.xpath(String.format(NAV_LOGIN_PAGE, loginPage)));
         navLoginPage.clickAndWait();
     }
@@ -40,7 +40,7 @@ public class RegPageInvalidMail extends BasePage {
         INPUT_NAME.sendKeys("Иван");
     }
     public void inPutMail(){
-        INPUT_MAIL.sendKeys("ывммумы@еназ");
+        INPUT_MAIL.sendKeys("hdeer9598@gmail.com");
     }
     public void inPutPassword(){
         INPUT_PASSWORD.sendKeys("Borisov88");
@@ -51,5 +51,4 @@ public class RegPageInvalidMail extends BasePage {
     public void clickReg(){
         REG.clickAndWait();
     }
-
 }

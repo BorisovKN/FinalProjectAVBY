@@ -1,6 +1,6 @@
-package avby;
+package avby.tests;
 
-import avby.pageObject.RegPageInvalidPassword;
+import avby.pageObject.pages.RegPageInvalidPassword;
 import org.testng.annotations.Test;
 
 
