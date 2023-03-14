@@ -36,7 +36,7 @@ public class LoginPage extends BasePage {
     }
     @Step("Ввод email.")
     public void inPutMail(){
-        INPUT_MAIL.sendKeys("hdeer9598@gmail.com");
+        INPUT_MAIL.sendKeys("kirill_borisov98@mail.ru");
     }
     @Step("Ввод пароля.")
     public void inPutPassword(){
